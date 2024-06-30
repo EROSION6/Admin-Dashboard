@@ -1,0 +1,54 @@
+span > svg {
+	width: 25px;
+	height: 25px;
+}
+
+.sidebar {
+	transition: transform 1s ease;
+}
+
+.progress {
+	fill: none;
+	stroke-width: 10;
+	stroke-linecap: round;
+	transform: translate(5px, 5px);
+	stroke-dashoffset: -30;
+	stroke-dasharray: 200;
+}
+
+@media (max-width: 1124px) {
+	.profile,
+	.reminderCard,
+	.button {
+		width: 18rem !important;
+	}
+}
+@media (max-width: 1024px) {
+	.profile,
+	.reminderCard,
+	.button {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.sidebar {
+		width: 14rem !important;
+		border-top-right-radius: 14px !important;
+		border-bottom-right-radius: 14px !important;
+	}
+	.sidebar h2 {
+		display: block;
+	}
+	.sidebar ul li a {
+		display: block;
+	}
+	.sidebar a span {
+		display: block;
+		margin-left: 14px;
+	}
+
+	.table:nth-child(2) {
+		display: none;
+	}
+}
